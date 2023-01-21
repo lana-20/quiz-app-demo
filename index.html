@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AWS Quiz App | Associate Cloud Architect</title>
+    <link rel="stylesheet" href="style.css" />
+    <!--FontAwesome CDN Link for Icons-->
+    <script
+      src="https://kit.fontawesome.com/4dadf70ab7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!--Start Quiz Button-->
+    <div class="start_btn"><button>Start Quiz</button></div>
+
+    <!-- Info Box -->
+    <div class="info_box">
+      <div class="info_title">
+        <span>Quiz Rules</span>
+      </div>
+      <div class="info_list">
+        <div class="info">
+          1. You will have only <span>15 seconds</span> per each question.
+        </div>
+        <div class="info">
+          2. Once you select you answer, you can't reselect.
+        </div>
+        <div class="info">
+          3. You can't select any option, once time goes off.
+        </div>
+        <div class="info">4. You can't exit the quiz while you're playing.</div>
+        <div class="info">
+          5. You'll get points on the basis of your correct answers.
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="quit">Exit Quiz</button>
+        <button class="restart">Continue</button>
+      </div>
+    </div>
+
+    <!-- Quiz Box -->
+    <div class="quiz_box">
+      <header>
+        <div class="title">AWS Cloud Quiz Application</div>
+        <div class="timer">
+          <div class="time_text">Time Left</div>
+          <div class="timer_sec">15</div>
+        </div>
+        <div class="time_line"></div>
+      </header>
+      <section>
+        <div class="que_text">
+          <!-- <span
+            >A company needs to implement a secure data encryption solution to
+            meet regulatory requirements. The solution must provide security and
+            durability in generating, storing, and controlling cryptographic
+            data keys. Which action should be taken to provide the MOST secure
+            solution?</span
+          > -->
+        </div>
+        <div class="option_list">
+          <!-- <div class="option">
+            <span
+              >Use AWS Key Management Service (AWS KMS) to generate AWS KMS keys
+              and data keys. Use AWS KMS key policies to control access to the
+              KMS keys.</span
+            >
+            <div class="icon tick"><i class="fas fa-check"></i></div>
+          </div>
+          <div class="option">
+            <span
+              >Use AWS Key Management Service (AWS KMS) to generate
+              cryptographic keys and import the keys to AWS Certificate Manager.
+              Use IAM policies to control access to the keys.</span
+            >
+            <div class="icon cross"><i class="fas fa-times"></i></div>
+          </div>
+          <div class="option">
+            <span
+              >Use a third-party solution from AWS Marketplace to generate the
+              cryptographic keys and store them on encrypted instance store
+              volumes. Use IAM policies to control access to the encryption key
+              APIs.</span
+            >
+            <div class="icon cross"><i class="fas fa-times"></i></div>
+          </div>
+          <div class="option">
+            <span
+              >Use OpenSSL to generate the cryptographic keys and upload the
+              keys to an Amazon S3 bucket with encryption enabled. Apply AWS Key
+              Management Service (AWS KMS) key policies to control access to the
+              keys.</span
+            >
+            <div class="icon cross"><i class="fas fa-times"></i></div>
+          </div> -->
+        </div>
+      </section>
+
+      <!-- Quiz Box Footer -->
+      <footer>
+        <div class="total_que">
+          <!-- <span><p>2</p>of<p>5</p>Questions</span> -->
+        </div>
+        <button class="next_btn">Next Question</button>
+      </footer>
+    </div>
+
+    <!-- Result Box -->
+    <div class="result_box">
+      <div class="icon">
+        <i class="fas fa-crown"></i>
+      </div>
+      <div class="complete_text">You've completed the Quiz!</div>
+      <div class="score_text">
+          <!-- <span>You got <p>2</p> out of <p>5</p>correct.</span> -->
+      </div>
+      <div class="buttons">
+          <button class="restart">Replay Quiz</button>
+          <button class="quit">Quit Quiz</button>
+        </div>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
